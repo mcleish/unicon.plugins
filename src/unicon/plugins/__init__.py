@@ -41,5 +41,6 @@ supported_os = [
     'staros',
     'viptela',
     'vos',
-    'windows'
+    'windows',
+    'fortigate'
 ]

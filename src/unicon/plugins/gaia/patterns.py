@@ -13,7 +13,7 @@ Description:
 from unicon.plugins.generic.patterns import GenericPatterns
 
 
-class GaiaPatterns(GenericPatterns):
+class GaiaPatterns():
     def __init__(self):
         super().__init__()
 
