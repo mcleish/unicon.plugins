@@ -30,5 +30,5 @@ class FortigatePatterns():
         
         # Last login: Tue Mar 23 22:11:15 on ttyS0
         # hostname #
-        self.global_prompt = r'^(.*?)%N(.*?)#\s*$'
+        self.global_prompt = r'^(.*?)FortiOS-VM64-KVM(.*?)#\s*$'
 
