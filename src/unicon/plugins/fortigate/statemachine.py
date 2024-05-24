@@ -28,7 +28,7 @@ class FortigateStateMachine(GenericSingleRpStateMachine):
         how to setup a statemachine in Unicon.
         '''
         
-        config = State('config', patterns.global_prompt)
+        global_config = State('global_config', patterns.global_prompt)
         login = State("login", patterns.login_prompt)
         password = State("password", patterns.password_prompt)
         new_password = State("new_pw", patterns.new_pw_prompt)
@@ -36,7 +36,7 @@ class FortigateStateMachine(GenericSingleRpStateMachine):
         self.add_state(login)
         self.add_state(password)
         self.add_state(new_password)
-        self.add_state(config)
+        self.add_state(global_config)
 
 
         login_to_new_password = Path(password, new_password, "\r\nYou are forced to change your password. Please input a new password.\r\nNew Password: ", Dialog([statements.new_password_stmt]))
