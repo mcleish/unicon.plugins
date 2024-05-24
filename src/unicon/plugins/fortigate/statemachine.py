@@ -19,7 +19,7 @@ statements = FortigateStatements()
 
 class FortigateStateMachine(GenericSingleRpStateMachine):
 
-    def __init__(self, hostname=None):
+    def __init__(self, hostname=None, learn_hostname=False):
         super().__init__(hostname)
 
     def create(self):
